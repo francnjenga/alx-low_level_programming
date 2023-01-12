@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_alphabet - prints all aplhabet inlowercase
@@ -6,10 +6,15 @@
 
 void print_alphabet(void)
 {
-	char letter;
+	char ch;
+	
+	ch = 'a';
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
+	while (ch <='z')
+	{
+		_putchar(ch);
+		ch++;
+	}
 
 	_putchar('\n');
 }
